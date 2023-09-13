@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p><strong>ФИО</strong></p>
+        <input type = "text" placeholder="Введите ФИО">
+        <p>Телефон</p>
+        <input type = "tel" placeholder="Введите ваш номер">
+        <p>Email</p>
+        <input type = "email" placeholder="email">
+        <p>
+            <label for="date">Дата рождения: </label>
+            <input type="date" id="date" name="date"/>
+            
+        </p>
+        <p>Выберите пол</p>
+            <div>
+                <input type="radio" id="Choice1" name="pol" value="1" />
+                <label for="Choice1">Мужской</label>
+            
+                <input type="radio" id="Choice2" name="pol" value="2" />
+                <label for="Choice2">Женский</label>
+            </div>
+            <p><select name="select" size="11" multiple>
+                <option selected value="s1">Pascal</option>
+                <option value="s2">C</option>
+                <option value="s3">C++</option>
+                <option value="s4">PHP</option>
+                <option value="s5">Python</option>
+                <option value="s6">Java</option>
+                <option value="s7">javascript</option>
+                <option value="s8">Haskel</option>
+                <option value="s9">Clojure</option>
+                <option value="s10">Prolog</option>
+                <option value="s11">Scala</option>
+               </select>
+            </p>
+            <textarea name="message" cols="30" rows="4" placeholder="Биография"></textarea>
+
+            <label><input type="checkbox" name="check" value="oz">С контрактом ознакомлен(а)</label>
+            <p style="text-align: center"><button>Сохранить</button></p>
+       
+    </form>
+</body>
+</html>
