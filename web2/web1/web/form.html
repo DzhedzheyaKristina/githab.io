@@ -8,11 +8,11 @@
 <body>
     <form>
         <p><strong>ФИО</strong></p>
-        <input type = "text" placeholder="Введите ФИО">
+        <input type = "text" pattern = "^[А-Яа-яЁё\s]+$" placeholder="Введите ФИО">
         <p>Телефон</p>
-        <input type = "tel" placeholder="Введите ваш номер">
+        <input type = "tel" pattern = "[0-9]{11}" placeholder="Введите ваш номер">
         <p>Email</p>
-        <input type = "email" placeholder="email">
+        <input type = "email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder="email">
         <p>
             <label for="date">Дата рождения: </label>
             <input type="date" id="date" name="date"/>
@@ -26,23 +26,23 @@
                 <input type="radio" id="Choice2" name="pol" value="2" />
                 <label for="Choice2">Женский</label>
             </div>
-            <p><select name="select" size="11" multiple>
-                <option selected value="s1">Pascal</option>
-                <option value="s2">C</option>
-                <option value="s3">C++</option>
-                <option value="s4">PHP</option>
-                <option value="s5">Python</option>
-                <option value="s6">Java</option>
-                <option value="s7">javascript</option>
-                <option value="s8">Haskel</option>
-                <option value="s9">Clojure</option>
-                <option value="s10">Prolog</option>
-                <option value="s11">Scala</option>
-               </select>
-            </p>
+            <br>
+                <h2>Язык программирования</h2>
+                <input type ="checkbox" name = "lang" value = "">Pascal<Br>
+                <input type ="checkbox" name = "lang" value = "">C<Br>
+                <input type ="checkbox" name = "lang" value = "">C++<Br>
+                <input type ="checkbox" name = "lang" value = "">PHP<Br>
+                <input type ="checkbox" name = "lang" value = "">Python<Br>
+                <input type ="checkbox" name = "lang" value = "">Java<Br>
+                <input type ="checkbox" name = "lang" value = "">javascript<Br>
+                <input type ="checkbox" name = "lang" value = "">Haskel<Br>
+                <input type ="checkbox" name = "lang" value = "">Clojure<Br>
+                <input type ="checkbox" name = "lang" value = "">Prolog<Br>
+                <input type ="checkbox" name = "lang" value = "">Scala<Br>
+               <br>
             <textarea name="message" cols="30" rows="4" placeholder="Биография"></textarea>
 
-            <label><input type="checkbox" name="check" value="oz">С контрактом ознакомлен(а)</label>
+            <label><input type="checkbox" name="check" value="oz" required>С контрактом ознакомлен(а)</label>
             <p style="text-align: center"><button>Сохранить</button></p>
        
     </form>
