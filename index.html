@@ -1,23 +1,33 @@
 
-
 <!DOCTYPE html>
  <html lang="en">
+    
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" type="text/css" href = "style.css">
 
  </head>
  <body>
+    <header>
+        <img id = "logo" src="logo1.png">
+        <div class = "title">Задание 2</div>
+        <ul class = "menu">
+            <li><a href="#">Список гиперссылок</a></li>
+            <li><a href="#tab">Таблица</a></li>
+            <li><a href="#forma">Форма</a></li>
+        </ul>
+    </header>
+    <nav class = "links">
     <ul type = "disc">
         <li>
             <a href="http://kubsu.ru/" title = "Task 1">Абсолютная гиперссылка на сайт КубГУ</a>
         </li>
         <li><a href="https://kubsu.ru/" title = "Task 2">Абсолютная гиперссылка КубГУ в протоколе https</a></li>
         <li><a href="http://kubsu.ru/"><img src="image.jpg" width="400" height="300"></a>
-      
         </li>
-        <il><a href = "#internallink" target = "_blank">Фрагмент</a></il>
+        <li><a href = "#internallink" target = "_blank">Фрагмент</a></li>
         <li>
             <a href = "./1index.html" title = "Task 4">Ссылка на внутреннюю страницу</a>
         </li>
@@ -32,10 +42,10 @@
         </li>
         <li><a></a>Ссылка без href</li>
         <li><p>Котекстная <a href = "#">ссылка</a> в тексте</p></li>
-        <li><a href = "aboutli.html" rel = "nofollow" >Запрещает поиск</a></li>
+        <li><a href = "aboutli.html" rel = "nofollow" >Запрещает переход</a></li>
         <li><a href = "aboutli.html" rel = "noindex"></a>Запрещает индексацию</li>
         <li><a href = "form.html">Форма</a></li>
-        <li><a href="https://kubsu.ru?productid=1234">URL3</a></li>
+        <li><a href="https://kubsu.ru?productid=1234">С тремя параметрами URL</a></li>
         <li><a href="#example_id">С параметром ID</a></li>
         <li>
             <map name = "clickable">
@@ -45,10 +55,59 @@
             <img usemap = "#clickable" src = "image.jpg" alt = "picture" width="500px" height="300px">
         </li>
         <li><a href = "ftp://pr:123@test.rebex.net/www/213">ftp</a></li>
-        
     </ul>
-  <h2>Форма</h2>
+    </nav>
+    <table>
+        <caption id = "tab">Расписание(знаменатель)</caption>
+        <thead>
+            <tr>
+                <th scope="col">День недели</th>
+                <th scope="col">Начало</th>
+                <th scope="col">Конец</th>
+                <th scope="col">Кол-во пар</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope = "row">Понедельник</th>
+                <td>9:30</td>
+                <td>15:30</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th scope = "row">Вторник</th>
+                <td>8:00</td>
+                <td>12:30</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th scope = "row">Среда</th>
+                <td>8:00</td>
+                <td>10:50</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th scope = "row">Четверг</th>
+                <td>8:00</td>
+                <td>12:30</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th scope = "row">Пятница</th>
+                <td>8:00</td>
+                <td>12:30</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope = "row">Суббота</th>
+            <td colspan="3">КСРС</td>
+            
+
+        </tfoot>
+    </table>
     <form>
+    <a id = "forma">Форма</a>
         <p><strong>ФИО</strong></p>
         <input type = "text" pattern = "^[А-Яа-яЁё\s]+$" placeholder="Введите ФИО">
         <p>Телефон</p>
@@ -64,11 +123,11 @@
             <div>
                 <input type="radio" id="Choice1" name="pol" value="1" />
                 <label for="Choice1">Мужской</label>
-            
                 <input type="radio" id="Choice2" name="pol" value="2" />
                 <label for="Choice2">Женский</label>
             </div>
-              <br>
+            
+                <br>
                 <h2>Язык программирования</h2>
                 <input type ="checkbox" name = "lang" value = "">Pascal<Br>
                 <input type ="checkbox" name = "lang" value = "">C<Br>
@@ -85,7 +144,7 @@
             <textarea name="message" cols="30" rows="4" placeholder="Биография"></textarea>
 
             <label><input type="checkbox" name="check" value="oz" required>С контрактом ознакомлен(а)</label>
-            <p style="text-align: center"><button>Сохранить</button></p>
+            <p style="text-align: center" ><button >Сохранить</button></p>
        
     </form>
     <ol>
@@ -96,5 +155,8 @@
     </ol>
     <h2 id = "internallink">Конец страницы</h2>
     <a id = "example_id">ID!</a>
+    <div id = "footer">
+        &copy;Кристина Джеджея 
+    </div>
  </body>
  </html>
