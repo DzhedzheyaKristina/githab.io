@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel = "stylesheet" href = "https://maxcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Task 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Task 5</title>
 </head>
 <body>
     <header class="main">
-            <div class="main__wrapper">
+        <div class="row">
+            <div class="main__wrapper align-items-center col-md-6 col-sm-4">
                 <div class="main__logo">
                     <img src="logo1.png" class="main__logo-img" alt="#">
-                    <div class="main__logo-name">
-                        <p>Задание3</p>
-                    </div>
-                </div>
-                <div class="main__links">
-                    <ul class="main__link">
-                        <li><a href="#">Список гиперссылок</a></li>
-                        <li><a href="#tab">Таблица</a></li>
-                        <li><a href="#forma">Форма</a></li>
-                                
-                    </ul>
+                    <span class = "main__logo-name">Interline</span>
                 </div>
             </div>
-        
+            <div class="main__links col-md-6 col-sm-8 d-flex align-items-end justify-content-end">
+                <ul class="nav d-flex">
+                    <li class = "nav item"><a class = "nav-link link-secondary" href="#">Список гиперссылок</a></li>
+                    <li class = "nav item"><a class = "nav-link link-secondary" href="#tab">Таблица</a></li>
+                    <li class = "nav item"><a class = "nav-link link-secondary" href="#forma">Форма</a></li>
+                                
+                </ul>
+            </div>
+            
+        </div>
     </header>
     <div class="container">
         <nav class="navigation">
@@ -71,54 +72,62 @@
 
             </div>
         </nav>
-        <!--Таблица (Расписание пар)-->
+        
         <section class="table">
-            <p><a name = "tab"></a></p>
-            <div class="title"><h2>Расписание(знаменатель)</h2></div>
-            <table class="table">
-                <tbody>
-                    <tr class="table__element table__element-odd">
-                        <th>День недели</th>
-                        <th>Начало</th>
-                        <th>Конец</th>
-                        <th>Кол-во пар</th>
-                    </tr>
-                    <tr class="table__element table__element-even">
-                        <td>Понедельник</td>
-                        <td>9:30</td>
-                        <td>15.30</td>
-                        <td>4</td>
-                    </tr>
-                    <tr class="table__element table__element-odd">
-                        <td>Вторник</td>
-                        <td>8:00</td>
-                        <td>14:00</td>
-                        <td>4</td>
-                    </tr>
-                    <tr class="table__element table__element-even">
-                        <td>Среда</td>
-                        <td>8:00</td>
-                        <td>10:50</td>
-                        <td>2</td>
-                    </tr>
-                    <tr class="table__element table__element-odd">
-                        <td>Четверг</td>
-                        <td>11:10</td>
-                        <td>12:30</td>
-                        <td>1</td>
-                    </tr>
-                    <tr class="table__element table__element-even">
-                        <td>Пятница</td>
-                        <td>8:00</td>
-                        <td>12:30</td>
-                        <td>3</td>
-                    </tr>
-                    <tr class="table__element table__element-odd">
-                        <td>Суббота</td>
-                        <td colspan="3">КСРС</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class = "row">
+                <div class = "col-md-8 mx-auto">
+                    <p><a name = "tab"></a></p>
+                    <div class = "row">
+                        <div class = "col-md-8 offset-md-2">
+                            <h3>Расписание(знаменатель)</h3>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr class="table__element table__element-odd">
+                                <th>День недели</th>
+                                <th>Начало</th>
+                                <th>Конец</th>
+                                <th>Кол-во пар</th>
+                            </tr>
+                            <tr class="table__element table__element-even">
+                                <td>Понедельник</td>
+                                <td>9:30</td>
+                                <td>15.30</td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="table__element table__element-odd">
+                                <td>Вторник</td>
+                                <td>8:00</td>
+                                <td>14:00</td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="table__element table__element-even">
+                                <td>Среда</td>
+                                <td>8:00</td>
+                                <td>10:50</td>
+                                <td>2</td>
+                            </tr>
+                            <tr class="table__element table__element-odd">
+                                <td>Четверг</td>
+                                <td>11:10</td>
+                                <td>12:30</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="table__element table__element-even">
+                                <td>Пятница</td>
+                                <td>8:00</td>
+                                <td>12:30</td>
+                                <td>3</td>
+                            </tr>
+                            <tr class="table__element table__element-odd">
+                                <td>Суббота</td>
+                                <td colspan="3">КСРС</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
 

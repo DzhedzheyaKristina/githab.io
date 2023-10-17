@@ -23,13 +23,11 @@ li {
 }
 
 .main {
-    width: 100%;
+    
     background-color: #d4baba;
-    min-height: 50px;
-    padding: 0;
-    margin: 0;  
-    padding-top: 20px;
-    padding-bottom: 20px;  
+    
+    padding: 5px;
+     
 }
 
 .navigation 
@@ -46,13 +44,15 @@ li {
 
 .main__wrapper 
 {
-    display: flex;
-    justify-content: space-around;
+    font-family: "Segoe WP light";
+    font-size: 200%;
+    padding: 5px;
+    
 }
 
 .main__logo 
 {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     align-items: end;
 
@@ -63,13 +63,13 @@ li {
     margin-right:  20px ;
     width: 80px;
     height: 80px;
-    border-radius: 55px;
+    position: relative;
+    border-radius: 50%;
 }
 
 .main__logo-name 
 {
-    margin: 0;
-    padding: 0;
+    display: inline-block;
 }
 
 
@@ -103,26 +103,25 @@ li {
 .navigation__links ul li a
 {
     text-decoration: none;
-    
 }
 .navigation__links ul li a:hover
 {
     text-decoration: underline;
 }
 
-.title
+/* .title
 {
     margin: 0 auto;    
-}
+} */
 
-table {
+/* table {
     table-layout: fixed;
-    width: 80%;
-    border-collapse: collapse;
-    border: 3px solid black;
+    width: 80%; 
+    border-collapse: collapse; 
+    border: 3px solid black; 
     margin: 0 auto;
-    margin-bottom: 50px;
-}
+    margin-bottom: 50px; 
+} */
 
 thead th:nth-child(1) {
     width: 30%; 
@@ -252,12 +251,6 @@ footer p
         flex-direction: column;
 
     }
-    .main__wrapper 
-    {
-        display: block;
-        margin: 0 10px 0 10px;
-        
-    }
     
     .main__link 
     {
@@ -265,13 +258,7 @@ footer p
         flex-direction: column;
         justify-content: flex-start;
     }
-    .main__logo
-    {
-        display: flex;
-        margin: 5px;
-        justify-content: space-between;
-        align-items: center;
-    }
+    
     .main__link li
     {
         margin-left: 0;
