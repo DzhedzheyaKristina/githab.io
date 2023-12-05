@@ -1,190 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>Task 5</title>
+    <link rel="stylesheet" href = "style.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>Document</title>
+    
 </head>
 <body>
-    <header class="main">
-        <div class="row">
-            <div class="main__wrapper align-items-center col-md-6 col-sm-4">
-                <div class="main__logo">
-                    <img src="logo1.png" class="main__logo-img" alt="#">
-                    <span class = "main__logo-name">Interline</span>
-                </div>
-            </div>
-            <div class="main__links col-md-6 col-sm-8 d-flex align-items-end justify-content-end">
-                <ul class="nav d-flex">
-                    <li class = "nav item"><a class = "nav-link link-secondary" href="#">Список гиперссылок</a></li>
-                    <li class = "nav item"><a class = "nav-link link-secondary" href="#tab">Таблица</a></li>
-                    <li class = "nav item"><a class = "nav-link link-secondary" href="#forma">Форма</a></li>
-                                
-                </ul>
-            </div>
-            
-        </div>
-    </header>
-    <div class="container">
-        <nav class="navigation">
-            <div class="navigation__links">
-                <h2>Гиперссылки</h2>
-                <ul>
-                    <li>
-                        <a href="http://kubsu.ru/" title = "Task 1">Абсолютная гиперссылка на сайт КубГУ</a>
-                    </li>
-                    <li><a href="https://kubsu.ru/" title = "Task 2">Абсолютная гиперссылка КубГУ в протоколе https</a></li>
-                    <li><a href="http://kubsu.ru/"><img src="image.jpg" class = "flower"></a>
-                    </li>
-                    <li><a href = "#internallink" target = "_blank">Фрагмент</a></li>
-                    <li>
-                        <a href = "./1index.html" title = "Task 4">Ссылка на внутреннюю страницу</a>
-                    </li>
-                    <li>
-                        <a href = "./aboutli.html">Каталог about</a>
-                    </li>
-                    <li><a href = "../web1.html">На уровень выше</a></li>
-                    <li><a href = "../../web2.html">На два уровня выше</a></li>
-                    <li><a href = "https://ru.wikipedia.org/wiki/%D0%92%D0%B7%D1%8F%D1%82%D0%B8%D0%B5_%D0%AD%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8_(1827)#:~:text=%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BA%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8%20%D0%B1%D1%8B%D0%BB%D0%B0%20%D0%BD%D0%B0%D1%87%D0%B0%D1%82%D0%B0%20%D0%B5%D1%89%D0%B5%20%D0%B2%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B5%201827%20%D0%B3%D0%BE%D0%B4%D0%B0">текст</a></li>
-                    <li>
-                        <a href = "javascript:void(0);">Пустая ссылка</a>
-                    </li>
-                    <li><a></a>Ссылка без href</li>
-                    <li><p>Котекстная <a href = "#">ссылка</a> в тексте</p></li>
-                    <li><a href = "aboutli.html" rel = "nofollow" >Запрещает переход</a></li>
-                    <li><a href = "aboutli.html" rel = "noindex"></a>Запрещает индексацию</li>
-                    <li><a href = "form.html">Форма</a></li>
-                    <li><a href="https://kubsu.ru?productid=1234">С тремя параметрами URL</a></li>
-                    <li><a href="#example_id">С параметром ID</a></li>
-                    <li>
-                        <map name = "clickable">
-                            <area shape = "circle" coords = "309,164,60" href = "https://kubsu.ru/" >
-                            <area shape = "rect" coords="185,225,268,352" href = "https://kubstu.ru/">
-                        </map>
-                        <img usemap = "#clickable" src = "image.jpg" alt = "picture" class = "flower">
-                    </li>
-                    <li><a href = "ftp://pr:123@test.rebex.net/www/213">ftp</a></li>
-                </ul>
+  <nav>
+    <section>      
+        <div class="text1">
+        <div class="block3">
+        <p id="prodPrice"></p>
+        <input id="num2" />
+          <p> Тип товара:</p>
+           <form>
+             <select name="prodType">
+               <option value="1">Товар 1</option>
+               <option value="2">Товар 2</option>
+               <option value="3">Товар 3</option>
+             </select>
+             <div id="radios">
+               <label><input type="radio" name="prodOptions" value="option1"> Опция 1</label>
+               <label><input type="radio" name="prodOptions" value="option2"> Опция 2</label>
+               <label><input type="radio" name="prodOptions" value="option3"> Опция 3</label>
+             </div>
+             <div id="checkboxes">
+               <label><input type="checkbox" name="prop1"> Свойство 1</label>
+               <label><input type="checkbox" name="prop2"> Свойство 2</label>
+             </div>
+           </form>
+           <button type="submit" onclick="updatePrice()">Посчитать</button>
+        </div></div>
+    </section>
+    <section>
+      <div class="block5 ">
+      <div class = "multi">
+        <div><img class = "img" src = "img1.png"></div>
+        <div><img class = "img" src = "img2.png"></div>
+        <div><img class = "img" src = "img3.png"></div>
+        <div><img class = "img" src = "img4.png"></div>
+        <div><img class = "img" src = "img5.png"></div>
+        <div><img class = "img" src = "img6.png"></div>
+        <div><img class = "img" src = "img7.png"></div>
+        <div><img class = "img" src = "img8.png"></div>
+      </div>
+      </div>
 
-            </div>
-        </nav>
-        
-        <section class="table">
-            <div class = "row">
-                <div class = "col-md-8 mx-auto">
-                    <p><a name = "tab"></a></p>
-                    <div class = "row">
-                        <div class = "col-md-8 offset-md-2">
-                            <h3>Расписание(знаменатель)</h3>
-                        </div>
-                    </div>
-                    <table class="table">
-                        <tbody>
-                            <tr class="table__element table__element-odd">
-                                <th>День недели</th>
-                                <th>Начало</th>
-                                <th>Конец</th>
-                                <th>Кол-во пар</th>
-                            </tr>
-                            <tr class="table__element table__element-even">
-                                <td>Понедельник</td>
-                                <td>9:30</td>
-                                <td>15.30</td>
-                                <td>4</td>
-                            </tr>
-                            <tr class="table__element table__element-odd">
-                                <td>Вторник</td>
-                                <td>8:00</td>
-                                <td>14:00</td>
-                                <td>4</td>
-                            </tr>
-                            <tr class="table__element table__element-even">
-                                <td>Среда</td>
-                                <td>8:00</td>
-                                <td>10:50</td>
-                                <td>2</td>
-                            </tr>
-                            <tr class="table__element table__element-odd">
-                                <td>Четверг</td>
-                                <td>11:10</td>
-                                <td>12:30</td>
-                                <td>1</td>
-                            </tr>
-                            <tr class="table__element table__element-even">
-                                <td>Пятница</td>
-                                <td>8:00</td>
-                                <td>12:30</td>
-                                <td>3</td>
-                            </tr>
-                            <tr class="table__element table__element-odd">
-                                <td>Суббота</td>
-                                <td colspan="3">КСРС</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-
-        <form id="form" action="#">
-            <p><a name = "forma"></a></p>
-            <h2>Форма</h2>
-            <p>
-                <p><strong>ФИО</strong></p>
-                <input type = "text" pattern = "^[А-Яа-яЁё\s]+$" placeholder="Введите ФИО">
-                <p>Телефон</p>
-                <input type = "tel" pattern = "[0-9]{11}" placeholder="Введите ваш номер">
-                <p>Email</p>
-                <input type = "email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder="email">
-                <p>
-                    <label for="date">Дата рождения: </label>
-                    <input type="date" id="date" name="date"/>
-                    
-                </p>
-                <p>Выберите пол</p>
-                    <div>
-                        <input type="radio" id="Choice1" name="pol" value="1" />
-                        <label for="Choice1">Мужской</label>
-                        <input type="radio" id="Choice2" name="pol" value="2" />
-                        <label for="Choice2">Женский</label>
-                    </div>
-                    
-                        <br>
-                        <h2>Язык программирования</h2>
-                        <input type ="checkbox" name = "lang" value = "">Pascal<Br>
-                        <input type ="checkbox" name = "lang" value = "">C<Br>
-                        <input type ="checkbox" name = "lang" value = "">C++<Br>
-                        <input type ="checkbox" name = "lang" value = "">PHP<Br>
-                        <input type ="checkbox" name = "lang" value = "">Python<Br>
-                        <input type ="checkbox" name = "lang" value = "">Java<Br>
-                        <input type ="checkbox" name = "lang" value = "">javascript<Br>
-                        <input type ="checkbox" name = "lang" value = "">Haskel<Br>
-                        <input type ="checkbox" name = "lang" value = "">Clojure<Br>
-                        <input type ="checkbox" name = "lang" value = "">Prolog<Br>
-                        <input type ="checkbox" name = "lang" value = "">Scala<Br>
-                    <br>
-                    <textarea name="message" cols="30" rows="4" placeholder="Биография"></textarea>
+    </section>
     
-                    <label><input type="checkbox" name="check" value="oz" required>С контрактом ознакомлен(а)</label>
-                    <p style="text-align: center" ><button >Сохранить</button></p>
-            
-            <p>
-        </form>
-    </div>  
-
-    <footer class="footer">
-        <div class="container-footer">
-            &copy;Кристина Джеджея 
+  </nav>
+    <script src = "6.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="7.js"></script>
     
-        </div>
-       
-            
-       
-    </footer>
 </body>
 </html>
