@@ -1,6 +1,6 @@
-.cl{
-    max-width: 1100px;
-    background-color: rgb(157, 92, 92);
+.multi{
+    max-width: 1150px;
+    background-color: rgb(213, 128, 128);
     margin: 0 auto;
     margin-top: 20px;
     padding: 10px;
@@ -12,9 +12,12 @@
 
 .block5{
     max-width: 1100px;
-    background-color: #595959;
+    background-color: #b16767;
     margin: 0 auto;
     margin-top: 20px;
     padding: 10px;
     max-height: 500px;
+}
+body{
+    background-color: rgb(187, 169, 169);
 }
